@@ -119,6 +119,7 @@ if (isset($_GET['email']) && isset($_GET['token'])) {
     <link rel="stylesheet" href="styles/font-awesome.min.css">
     <link rel="stylesheet" href="styles/barlow.css">
     <link rel="stylesheet" href="styles/login-dark-theme.css?<?= $version ?>" id="dark-theme" <?= $theme == "light" ? "disabled" : "" ?>>
+    <link rel="stylesheet" href="styles/shadcn.css?<?= $version ?>">
     <script type="text/javascript" src="scripts/auth-theme.js?<?= $version ?>"></script>
 </head>
 

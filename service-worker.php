@@ -33,6 +33,7 @@ const staticAssets = [
     'styles/login-dark-theme.css',
     'styles/font-awesome.min.css',
     'styles/brands.css',
+    'styles/shadcn.css',
     'styles/barlow.css',
     'styles/themes/red.css',
     'styles/themes/green.css',

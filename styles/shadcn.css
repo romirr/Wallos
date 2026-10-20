@@ -344,3 +344,12 @@ input[type="checkbox"]:disabled+label::after {
   letter-spacing: 0.02em;
   color: var(--text-muted);
 }
+
+.subscription-main .actions-expand {
+  color: var(--text-muted);
+  font-size: 18px;
+}
+
+.subscription-main .actions-expand:hover {
+  color: var(--text-color);
+}

@@ -236,3 +236,12 @@ input[type="checkbox"]:disabled+label::after {
   font-size: 14px;
   color: var(--text-muted);
 }
+
+.dashboard-subscriptions-list>.subscription-item {
+  width: auto;
+  min-width: 155px;
+}
+
+.dashboard-subscriptions-list>.subscription-item .subscription-item-title {
+  white-space: nowrap;
+}

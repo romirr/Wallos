@@ -145,7 +145,7 @@ if ($sortOrder == "payment_method_id") {
 
 $headerClass = count($subscriptions) > 0 ? "main-actions" : "main-actions hidden";
 
-$subscriptionsView = (isset($_COOKIE['subscriptionsView']) && $_COOKIE['subscriptionsView'] === 'grid') ? 'grid' : 'list';
+$subscriptionsView = (isset($_COOKIE['subscriptionsView']) && $_COOKIE['subscriptionsView'] === 'list') ? 'list' : 'grid';
 ?>
 <style>
   .logo-preview:after {

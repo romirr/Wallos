@@ -245,3 +245,102 @@ input[type="checkbox"]:disabled+label::after {
 .dashboard-subscriptions-list>.subscription-item .subscription-item-title {
   white-space: nowrap;
 }
+
+/* Subscriptions grid (default view): clean shadcn cards */
+.subscriptions.grid-view {
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.subscriptions.grid-view .subscription {
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: border-color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.subscriptions.grid-view .subscription:hover {
+  transform: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-color: var(--accent-color);
+}
+
+.subscriptions.grid-view .subscription-main>.logo {
+  width: 36px;
+  height: 36px;
+  max-width: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--box-border-color);
+  background-color: #FFFFFF;
+  padding: 4px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.subscriptions.grid-view .subscription-main>.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.subscriptions.grid-view .subscription-main>.name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+  white-space: nowrap;
+  display: block;
+}
+
+.subscriptions.grid-view .subscription-main>.price {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  font-variant-numeric: tabular-nums;
+  margin: 2px 0 10px;
+}
+
+.subscriptions.grid-view .subscription-main>.cycle,
+.subscriptions.grid-view .subscription-main>.next {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.subscriptions.grid-view .subscription-main .actions-expand {
+  color: var(--text-muted);
+}
+
+.subscriptions.grid-view .subscription-main>.payment_method:empty {
+  display: none;
+}
+
+.subscriptions.grid-view .subscription.inactive {
+  opacity: 0.55;
+}
+
+@media (max-width: 768px) {
+  .subscriptions.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .subscriptions.grid-view .subscription {
+    padding: 12px;
+  }
+
+  .subscriptions.grid-view .subscription-main>.name {
+    font-size: 13px;
+  }
+
+  .subscriptions.grid-view .subscription-main>.price {
+    font-size: 18px;
+  }
+}
+
+/* Subscription list title (category/group headers) */
+.subscription-list-title {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}

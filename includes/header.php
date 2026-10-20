@@ -180,7 +180,7 @@ $mobileNavigation = $settings['mobile_nav'] ? "mobile-navigation" : "";
             <span id="user" class="mobileNavigationHideOnMobile"><?= $userData['username'] ?></span>
           </button>
           <div class="dropdown-content">
-            <a href="." class="mobileNavigationHideOnMobile">
+            <a href="index.php" class="mobileNavigationHideOnMobile">
               <?php include "images/siteicons/svg/mobile-menu/home.php"; ?>
               <?= translate('dashboard', $i18n) ?></a>
             <a href="subscriptions.php" class="mobileNavigationHideOnMobile">
@@ -238,7 +238,7 @@ $mobileNavigation = $settings['mobile_nav'] ? "mobile-navigation" : "";
   if ($settings['mobile_nav'] == 1) {
     ?>
     <nav class="mobile-nav">
-        <a href="." class="nav-link <?= $dashboardClass ?>" title="<?= translate('dashboard', $i18n) ?>">
+        <a href="index.php" class="nav-link <?= $dashboardClass ?>" title="<?= translate('dashboard', $i18n) ?>">
           <?php include "images/siteicons/svg/mobile-menu/home.php"; ?>
           <?= translate('dashboard', $i18n) ?>
         </a>

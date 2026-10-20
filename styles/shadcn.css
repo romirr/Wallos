@@ -212,3 +212,27 @@ input[type="checkbox"]:disabled+label::after {
 .split-header>h2 .header-subtitle {
   color: var(--text-muted);
 }
+
+/* Dashboard stat cards (shadcn Card: muted title, large semibold value) */
+.dashboard-subscriptions-list>.subscription-item {
+  border-radius: var(--radius-lg);
+}
+
+.dashboard-subscriptions-list>.subscription-item .subscription-item-title,
+.dashboard-subscriptions-list>.subscription-item.thin .subscription-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.dashboard-subscriptions-list>.subscription-item .subscription-item-value,
+.dashboard-subscriptions-list>.subscription-item.thin .subscription-item-value {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.dashboard-subscriptions-list>.subscription-item .subscription-item-date {
+  font-size: 14px;
+  color: var(--text-muted);
+}
